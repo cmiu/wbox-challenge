@@ -39,7 +39,7 @@ public class BancomatServiceImpl implements BancomatService {
                 if (account.get(BanknoteType.HUNDRED_RON) < 0.25 * INITIAL_ONE_HUNDRED_COUNT) {
                     notificationService.sendEmail("Bancnote de 100 RON sub 20%");
                 }
-                if (account.get(BanknoteType.HUNDRED_RON) < 0.15 * INITIAL_ONE_HUNDRED_COUNT / 4) {
+                if (account.get(BanknoteType.HUNDRED_RON) < 0.15 * INITIAL_ONE_HUNDRED_COUNT) {
                     notificationService.sendSMS("Bancnote de 100 RON sub 15%");
                 }
                 if (account.get(BanknoteType.FIFTY_RON) < 0.15 * INITIAL_ONE_HUNDRED_COUNT) {
